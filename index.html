@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercício de JavaScript</title>
+    </head>
+    <body>
+
+        <script type="text/javascript">
+            let HE, ME, HS, MS, TOTAL, hora, minuto = 0;
+            HE = window.prompt("Informe a Hora de entrada (00-23):");
+            ME = window.prompt("Informe o minuto de entrada (00-59):");
+            document.write("A Hora exata de entrada foi: " + HE + ":" + ME);
+        </script>
+    <br>
+        <script>
+          HS = window.prompt("Informe a hora de saída (00-23):");
+            MS = window.prompt("Informe o minuto de saída (00-59):");
+            document.write("A Hora exata de saída foi: " + HS + ":" + MS);
+        </script>
+    <br>
+        <script>
+            hora = HS - HE
+            minuto = MS - ME
+
+            pag = 6 + (parseFloat(hora)) -2;
+
+            if (hora == 1 && minuto > 0)
+            {
+                document.write("Pagar: R$4,00")
+            }
+                else
+                {
+                    document.write("Pagar: R$" + 4 + 1)
+                }
+            if (hora == 2)
+            {
+                document.write("Pagar: R$6,00")
+            }
+            if (hora >= 3)
+            {
+                document.write("Pagar: R$" + pag)
+            }
+        </script>
+
+    </body>
+</html>
